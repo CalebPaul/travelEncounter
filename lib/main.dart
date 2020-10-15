@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text('credit to /u/cairfrey for these plothooks'),
+              child: Text('credit to /u/cairfrey for curating these plothooks'),
             ),
           ],
         ),
