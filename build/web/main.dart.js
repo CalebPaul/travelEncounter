@@ -38778,7 +38778,7 @@ s.m(0,"Type",this.b)
 s.m(0,"Terrain",this.c)
 return s}}
 F.uw.prototype={
-L:function(a,b){return new S.nt(new F.nF("Random Travel Encounters",null),"Flutter Demo",X.Ve(null,C.lx,X.a19()),null)}}
+L:function(a,b){return new S.nt(new F.nF("Random Travel Encounters",null),"Random TTRPG Travel Encounters",X.Ve(null,C.lx,X.a19()),null)}}
 F.nF.prototype={
 aM:function(){return new F.pU(H.d([],t.bS),C.n)}}
 F.pU.prototype={
