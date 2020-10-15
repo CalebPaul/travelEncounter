@@ -15,12 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Random TTRPG Travel Encounters',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        // This makes the visual density adapt to the platform that you run
-        // the app on. For desktop platforms, the controls will be smaller and
-        // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Random Travel Encounters'),
@@ -53,8 +50,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   _getEvents() async {
-    // var list = new List<Events>();
-
     String rawString = await rootBundle.loadString('encounter_data.json');
 
     Map rawList = json.decode(rawString);
