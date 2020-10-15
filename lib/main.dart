@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:travel_encounters/EncounterModel.dart';
 import 'dart:convert';
-import 'dart:developer' as dev;
 import 'package:travel_encounters/Events.dart';
 import "dart:math";
 
@@ -35,7 +34,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   List<Events> _events = [];
   var eventText = "";
 
@@ -56,19 +54,15 @@ class _MyHomePageState extends State<MyHomePage> {
 
     var cleanList = EncounterModel.fromJsonMap(rawList).events;
 
-    // for (var event in cleanList) {
-    //   dev.log(event.event);
-    // }
-
     eventText = cleanList[Random().nextInt(cleanList.length)].event;
 
     return cleanList;
   }
 
-
   void _newEncounter() {
     setState(() {
       eventText = _events[Random().nextInt(_events.length)].event;
+      print("encounter: $eventText");
     });
   }
 
@@ -85,14 +79,13 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
-
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Card(
               shadowColor: Colors.greenAccent,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Text(
+                child: SelectableText(
                   eventText,
                   style: Theme.of(context).textTheme.bodyText2,
                 ),
