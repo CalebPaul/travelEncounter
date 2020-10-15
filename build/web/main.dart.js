@@ -38789,7 +38789,7 @@ var $async$kr=P.aj(function(a,b){if(a===1)return P.ak(b,r)
 while(true)switch(s){case 0:l=Z
 k=C.bg
 s=3
-return P.aC($.QO().JC("assets/encounter_data.json"),$async$kr)
+return P.aC($.QO().JC("data/encounter_data.json"),$async$kr)
 case 3:m=l.a_5(k.e6(0,b)).a
 for(o=m.length,n=0;n<o;++n)m[n].toString
 p.e=m[C.ne.x6(o)].a

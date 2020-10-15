@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   _getEvents() async {
-    String rawString = await rootBundle.loadString('assets/encounter_data.json');
+    String rawString = await rootBundle.loadString('data/encounter_data.json');
 
     Map rawList = json.decode(rawString);
 
