@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Random TTRPG Travel Encounters',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Random Travel Encounters'),
@@ -75,33 +75,50 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Center(child: Text(widget.title)),
       ),
       backgroundColor: Colors.grey,
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Card(
-              shadowColor: Colors.greenAccent,
-              child: Padding(
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.purple, Colors.deepPurple],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            )
+        ),
+
+
+        child: Center(
+          // Center is a layout widget. It takes a single child and positions it
+          // in the middle of the parent.
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: SelectableText(
-                  eventText,
-                  style: Theme.of(context).textTheme.bodyText2,
+                child: Card(
+                  shadowColor: Colors.greenAccent,
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: SelectableText(
+                      eventText,
+                      style: Theme.of(context).textTheme.headline6,
+                    ),
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text('credit to /u/cairfrey for curating these plothooks'),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.pink,
         onPressed: _newEncounter,
         tooltip: 'New Encounter!',
         child: Icon(Icons.auto_awesome),
+      ),
+      bottomSheet: SelectableText(
+        'credit to /u/cairfrey for curating these plothooks',
+        style: Theme.of(context).textTheme.bodyText2,
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
