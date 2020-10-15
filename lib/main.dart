@@ -98,6 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            Text('credit to /u/cairfrey for these plothooks'),
           ],
         ),
       ),
