@@ -38799,7 +38799,7 @@ case 1:return P.al(q,r)}})
 return P.am($async$kr,r)},
 EN:function(){this.aD(new F.O3(this))},
 L:function(a,b){var s=null,r=T.rL(L.Ln(this.a.c,s),s,s)
-return new M.on(new E.m5(r,new P.a8(1/0,56),s),T.rL(T.ZH(H.d([new V.rI(C.vp,new T.fp(C.tQ,L.Ln(this.e,K.bh(b).X.z),s),s),new T.fp(C.bK,L.Ln("credit to /u/cairfrey for these plothooks",s),s)],t.X),C.og),s,s),E.U2(L.Uc(C.u9),!1,this.gEM(),"New Encounter!"),C.vr,s)}}
+return new M.on(new E.m5(r,new P.a8(1/0,56),s),T.rL(T.ZH(H.d([new V.rI(C.vp,new T.fp(C.tQ,L.Ln(this.e,K.bh(b).X.z),s),s),new T.fp(C.bK,L.Ln("credit to /u/cairfrey for curating these plothooks",s),s)],t.X),C.og),s,s),E.U2(L.Uc(C.u9),!1,this.gEM(),"New Encounter!"),C.vr,s)}}
 F.O5.prototype={
 $1:function(a){var s=this.a
 s.aD(new F.O4(s,a))},
