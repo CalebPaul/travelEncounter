@@ -56,9 +56,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
     var cleanList = EncounterModel.fromJsonMap(rawList).events;
 
-    for (var event in cleanList) {
-      dev.log(event.event);
-    }
+    // for (var event in cleanList) {
+    //   dev.log(event.event);
+    // }
 
     eventText = cleanList[Random().nextInt(cleanList.length)].event;
 
@@ -98,7 +98,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
-            Text('credit to /u/cairfrey for these plothooks'),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text('credit to /u/cairfrey for these plothooks'),
+            ),
           ],
         ),
       ),
